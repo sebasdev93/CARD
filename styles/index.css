@@ -1,0 +1,101 @@
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+
+body{
+   
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(226, 46%, 93%);
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background-color: white;
+    width: 90%;
+    box-shadow: 10px 10px 30px 10px hsla(245, 75%, 52%, 0.151);
+    border-radius: 12px;
+    
+}
+.main>img{
+    max-width: 100%;
+    border-radius: 12px 12px 0 0;
+
+}
+.information{
+    text-align: center;
+    padding: 1.5rem 1.75rem;
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+h1+p{
+    margin: 1rem 0;
+    color: #a59f9f;
+}
+.plan{
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: .75rem;
+    border-radius: 12px;
+}
+.Payment{
+
+    margin: 0 1rem;
+   
+}
+
+.Payment>p:first-child{
+    font-weight: 900;
+    padding-bottom: 0.3rem;
+}
+a{
+    margin-left:auto;
+}
+button{
+    display:block;
+    width: 100%;
+    padding: .75rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+button:hover{
+    cursor: pointer;
+}
+button.primero{
+    background-color: hsl(245, 75%, 52%);
+    color: #ffffff;
+    box-shadow: 10px 10px 30px 10px hsla(245, 75%, 52%, 0.151);
+}
+button.primero:hover{
+    background-color: hsl(245, 43%, 49%);
+    transition: all 1s linear;
+}
+button.segundo{
+    background-color: #ffffff;
+    color: #a59f9f;
+}
+
+@media only screen and (min-width:500px) {
+    .main{
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
